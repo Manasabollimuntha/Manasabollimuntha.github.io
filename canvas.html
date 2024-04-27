@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="1500" height="700" style="border:1px solid black;">
+
+</canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+ctx.fillStyle = "yellow";
+ctx.fillRect(500,300,500,350);
+
+
+ctx.beginPath();
+ctx.strokeStyle = "yellow";
+ctx.lineWidth = 5;
+ctx.arc(1300,50,40,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath()
+ctx.strokeStyle = "red";
+ ctx.moveTo(500, 300)
+ ctx.lineTo(750,40)
+ ctx.lineTo(1000, 300)
+ ctx.lineTo(500, 300)
+ ctx.stroke()
+ ctx.closePath()
+
+ctx.beginPath()
+ctx.strokeStyle = "red";
+ctx.lineWidth = 5;
+ctx.strokeRect(700,400,100,250);
+
+ctx.beginPath()
+ctx.strokeStyle = "red";
+ctx.lineWidth = 5;
+ctx.strokeRect(500,300,500,350);
+
+
+ctx.beginPath()
+ctx.strokeStyle = "brown";
+ctx.lineWidth = 5;
+ctx.strokeRect(550,400,100,100);
+
+
+ctx.beginPath()
+ctx.strokeStyle = "brown";
+ ctx.moveTo(600, 400)
+ ctx.lineTo(600,500)
+  ctx.stroke()
+ ctx.closePath()
+
+
+ctx.beginPath()
+ctx.strokeStyle = "brown";
+ ctx.moveTo(550, 450)
+ ctx.lineTo(650,450)
+  ctx.stroke()
+ ctx.closePath()
+
+
+ctx.beginPath();
+ctx.strokeStyle = "red";
+ctx.lineWidth = 5;
+ctx.arc(780,540,5,0,2*Math.PI);
+ctx.stroke();
+
+
+ctx.font = "50px Arial";
+ctx.strokeStyle = "red";
+
+ctx.fillText("My home",650,250);
+</script>
+
+</body>
+</html>
+
